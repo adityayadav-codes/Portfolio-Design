@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Landing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Case Studies</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Recent Work</a></li>
+        <li><a href="#">Get In Touch</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><img src="linkedin.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="behance.svg" alt="Behance"></a>
+        <a href="#"><img src="twitter.svg" alt="Twitter"></a>
+      </div>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Your Name Here</h1>
+      <p>
+        Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="#" class="btn">Let’s get started →</a>
+    </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Profile photo" />
+    </div>
+  </section>
+
+  <section class="brands">
+    <p>Worked with</p>
+    <div class="brand-logos">
+      <div class="brand">ClickUp</div>
+      <div class="brand">Dropbox</div>
+      <div class="brand">Paychex</div>
+      <div class="brand">Elastic</div>
+      <div class="brand">Stripe</div>
+    </div>
+  </section>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
